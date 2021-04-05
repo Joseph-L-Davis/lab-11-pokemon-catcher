@@ -1,1 +1,8 @@
 /* add home page styles here */
+input {
+    display: none;
+}
+
+input:checked+img {
+    border: solid 2px lightblue;
+}
