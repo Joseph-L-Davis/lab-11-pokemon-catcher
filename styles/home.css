@@ -1,6 +1,6 @@
 /* add home page styles here */
 input {
-    display: none;
+    /* display: none; */
 }
 
 input:checked+img {
