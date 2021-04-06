@@ -17,7 +17,7 @@ export function generateThreePokemon() {
         random2 === random3 ||
         random1 === random3)
     {
-            // reassign variables if they matched eachother
+            // reassign variables if they matched each other
         random1 = getRandom();
         random2 = getRandom();
         random3 = getRandom();

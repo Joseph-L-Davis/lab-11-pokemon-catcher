@@ -3,8 +3,8 @@ import { generateThreePokemon } from './data-utils.js';
 import { capturePokemon } from './local-storage-utils.js';
 import { findByPokeName } from './utils.js';
 
-const button = document.querySelector('button');
-const reset = document.querySelector('#reset');
+const button = document.querySelector('#button');
+const results = document.querySelector('#results');
 
 function createPokeDom() {
     
@@ -38,20 +38,20 @@ function createPokeDom() {
 
 createPokeDom();
 
+// set event listeners to update state and DOM
+let i = 0;
 button.addEventListener('click', () => {
-    let i = 0;
+    
     const selectedRadio = document.querySelector('input:checked');
 
     const pokeObject = findByPokeName(selectedRadio.value);
     capturePokemon(pokeObject);
     createPokeDom();
     i++;
+    console.log(i);
 
-    if (i > 10){
+    if (i === 10){
         button.style.display = 'none';
-        reset.style.display = 'block';
+        results.style.display = 'block';
     }
 });
-
-
-// set event listeners to update state and DOM
