@@ -110,3 +110,20 @@ footer {
     }
 
 }
+
+input {
+    display: none;
+}
+
+label img {
+    width: 100px;
+    height: 100px;
+}
+
+input:checked+img {
+    border: solid 2px lightblue;
+}
+
+.results {
+    display: none;
+}

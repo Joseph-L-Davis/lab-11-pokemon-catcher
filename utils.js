@@ -6,5 +6,5 @@ export function findById(array, id) {
 }
 
 export function findByPokeName(name) {
-    return pokeData.find(poke => name === poke.name);
+    return pokeData.find(poke => name === poke.pokemon);
 }
