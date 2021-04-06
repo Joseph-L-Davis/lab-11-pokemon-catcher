@@ -42,10 +42,11 @@ export function encounterPokemon(pokemon) {
 
         pokedex.push(newPokemon);
         // add updated pokedex to local storage
-        setPokedex(pokedex);
 
-        return pokedex; 
     }
+    setPokedex(pokedex);
+
+    return pokedex; 
 }
 
 //  Capturing a pokemon function, similar to encounter function

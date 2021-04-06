@@ -4,6 +4,7 @@ import { capturePokemon } from './local-storage-utils.js';
 import { findByPokeName } from './utils.js';
 
 const button = document.querySelector('button');
+const reset = document.querySelector('#reset');
 
 function createPokeDom() {
     
@@ -38,11 +39,18 @@ function createPokeDom() {
 createPokeDom();
 
 button.addEventListener('click', () => {
+    let i = 0;
     const selectedRadio = document.querySelector('input:checked');
 
     const pokeObject = findByPokeName(selectedRadio.value);
     capturePokemon(pokeObject);
     createPokeDom();
+    i++;
+
+    if (i > 10){
+        button.style.display = 'none';
+        reset.style.display = 'block';
+    }
 });
 
 
