@@ -11,3 +11,7 @@ label img {
 input:checked+img {
     border: solid 2px lightblue;
 }
+
+.results {
+    display: none;
+}

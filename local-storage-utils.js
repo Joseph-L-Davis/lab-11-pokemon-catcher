@@ -54,6 +54,7 @@ export function capturePokemon(pokemon) {
     const pokedex = getPokedex();
 
     const matchingPokemon = findById(pokedex, pokemon.pokemon);
+    
     matchingPokemon.captured++;
     //   add updated pokedex to local storage
     setPokedex(pokedex);

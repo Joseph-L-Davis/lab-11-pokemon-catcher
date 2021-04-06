@@ -5,14 +5,6 @@ import { findByPokeName } from './utils.js';
 
 const button = document.querySelector('button');
 
-const poke1Encounter = document.querySelector('#poke1-encounter');
-const poke2Encounter = document.querySelector('#poke2-encounter');
-const poke3Encounter = document.querySelector('#poke3-encounter');
-
-const poke1Captured = document.querySelector('#poke1-captured');
-const poke2Captured = document.querySelector('#poke2-captured');
-const poke3Captured = document.querySelector('#poke3-captured');
-
 function createPokeDom() {
     
     const pokeRadio1 = document.querySelector('#poke1-radio');
