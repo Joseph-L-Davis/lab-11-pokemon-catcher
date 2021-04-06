@@ -1,6 +1,11 @@
 /* add home page styles here */
 input {
-    /* display: none; */
+    display: none;
+}
+
+label img {
+    width: 100px;
+    height: 100px;
 }
 
 input:checked+img {
